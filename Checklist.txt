@@ -1,0 +1,14 @@
+TODO:
+
+DONE:
+- Make animals sway from side to side (using cosin probably) (stretch goal)
+    - Optionally make them go in a random X direction and bouce of walls (I did this one)
+- Make the gun bigger
+- Make the game endable
+- Make the actual animals spawn
+- Make bullets come from the right place
+- Make cats and dogs switchable (stretch goal)
+- Make a favicon
+- Record the image origins
+- Get the custom crosshair to work (it seems the files are not being read by the browser for some reason)
+- Change the fonts

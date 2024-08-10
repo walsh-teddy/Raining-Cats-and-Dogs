@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Teddy Walsh Project 03 About</title>
+</head>
+
+<body>
+    <header>
+        <h1>
+            Teddy Walsh Project 3 About
+        </h1>
+        <h2>
+            Raining Cats and Dogs!
+        </h2>
+    </header>
+    <main>
+        <div id="projectList">
+            <div class="project">
+                <div class="description">
+                    <h3>
+                        Name
+                    </h3>
+                    <p>
+                        "Raining Cats and Dogs"
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="description">
+                    <h3>
+                        High Concept
+                    </h3>
+                    <p>
+                        Cats and dogs are falling from the sky! You need to shoot down the cats but be carful not to hit
+                        a
+                        dog.<br><br>
+
+                        <em>(I'll potentially change it from cats and dogs to something else as long as they're 2
+                            different
+                            types of things falling down the screen)</em>
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="description">
+                    <h3>
+                        Genre
+                    </h3>
+                    <p>
+                        Arcade
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="description">
+                    <h3>
+                        Platform
+                    </h3>
+                    <p>
+                        Desktop (probably simple enough to port to mobile if I ever want/need to)
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="description">
+                    <h3>
+                        Story
+                    </h3>
+                    <p>
+                        They're falling into your mom's house but shes allergic to cats or something. Or maybe just cats
+                        are
+                        evil and dogs are chill.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="description">
+                    <h3>
+                        Astetics
+                    </h3>
+                    <p>
+                        Goofy over everything. There isn't going to really be any aniation outside of them maybe
+                        exploding.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="description">
+                    <h3>
+                        Gameplay
+                    </h3>
+                    <p>
+                        The controls will be very simple. They will have a gun the swivels from the middle botton of the
+                        screen that points at their mouse and shoots when they click. Potentially instead of that, there
+                        it
+                        won't swivel and instead will always be pointing up but will match the X position of their
+                        mouse.
+                    </p>
+                    <p>
+                        The basic challange will be a simple galega style arcade shooter of making sure they destroy all
+                        the
+                        cats. They can't just shoot wildly though because if they hit a dog then they loose (or maybe
+                        there
+                        is a life system, in which case I would maybe include health packs). Its a simple game of aim,
+                        reflexes, and restraint. The enemy spawn will increase over time and the player's goal will be
+                        to
+                        get a high score. I will record the high score using local storage.
+                    </p>
+
+                    <p>
+                        To teach them I will maybe have text appear when the game starts or maybe
+                        just in the starting screen that says something along the lines of "Shoot down the cats but
+                        don't
+                        hit a dog!".
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="description">
+                    <h3>
+                        Mockups
+                    </h3>
+                    <p>
+                        Sorry if the pictures are a bit small. Feel free to open them in a new window. This CSS I made
+                        for my portfolio dosen't allow well for close ups of pictures
+                    </p>
+                </div>
+
+                <div class="picture">
+                    <img src="media/startScreen.jpg" alt="The start screen mockup">
+                    <h5>
+                        Start Screen
+                    </h5>
+                </div>
+
+                <div class="picture">
+                    <img src="media/gameScreen.jpg" alt="The game screen mockup">
+                    <h5>
+                        Gameplay screen
+                    </h5>
+                </div>
+
+                <div class="picture">
+                    <img src="media/loseScreen.jpg" alt="The lose screen mockup">
+                    <h5>
+                        Game-over Screen
+                    </h5>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="description">
+                    <h3>
+                        About The Developer
+                    </h3>
+                    <p>
+                        My name is Teddy Walsh and I am a Game Design and Development Major at RIT. Graduating class of
+                        2024. I love writing stories and running D&D. More info right
+                        <strong><a href="https://people.rit.edu/~tjw6911/235/">here</a></strong> (;
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="description">
+                    <h3>
+                        Proscess
+                    </h3>
+                    <p>
+                        I started out with the Circle Blast exercise as the basic framework for getting things to move
+                        and load properly. I then started to deviate heavily from that to make my own vision a
+                        reality.<br><br>
+
+                        The first step was getting the gun to work. I had to do some weird math to make sure it was
+                        always pointing in the right direction. I then also had to mess around with the bullets. It took
+                        me an emberrasingly long time to figure out that the "x" and "y" in the comstructor are where to
+                        render it relative to the center, not the actual X and Y coordinates of the object... I
+                        eventually figured that out though and then bullets shot from the end of the gun!<br><br>
+
+                        I then made the animals work. My original plan was to have different classes for cats and dogs,
+                        but I realized that they reused much of the code and the only things that changed were their
+                        sprites and the interactions when they got shot or reached the bottom of the screen, so instead,
+                        I made 1 "Animal" class and gave them bool values for if it is a cat or not and if it is an
+                        enemy or not. Being a cat (or dog) determined the sprite that gets loaded, and being an enemy
+                        determines its interactions. This way I could pretty easily change which animals were the
+                        enemies (which was a requested feature by multiple people).<br><br>
+
+                        I also added a feature where the game is able to detect and display the highscore of the user
+                        and its saved to local storage, so it persists when the user leaves the page.<br><br>
+
+                        That took most of the time. I also did some cleanup, such as adding a font, adding a favicon,
+                        adding sound effects, and adding an end screen.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="description">
+                    <h3>
+                        Things To Look For
+                    </h3>
+                    <p>
+                        I am proud of loading in and saving the highscore from local storage, that is a good feature. It
+                        makes it feel more game-y and adds far more replayability since now you have a more clear
+                        goal.<br><br>
+
+                        Making the gun pivot from the center and follow the mouse as well as making the bullets spawn at
+                        the end of the gun was difficult to impliment but came out well.<br><br>
+
+                        Making the cats and dogs switchable did require that I change my entire plan, which was
+                        difficult but turned out well enough. Now there is a button on the start and end screen with
+                        updating text that shows which is the enemy. That was a highly requested feature that makes the
+                        game much more fun.<br><br>
+
+                        I did also make a way to randomly choose which sprite to use, adding some variety and humor to
+                        the game. Its a modular system so if I ever want to have more then I can easily add them in and
+                        change the "numOfSprites" constant. They've also all been compressed to not be too large of
+                        files.<br><br>
+
+                        I added a font but I think PIXI is finicky about loading it for the first time. I tried to use
+                        the fontFaceObserver library to load in the fonts before but the documentation made no sense to
+                        me.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project">
+                <div class="description">
+                    <h3>
+                        Credit
+                    </h3>
+                    <p>
+                        Here are where I got the images and sounds for my project:
+
+                    <ul>
+                        <li>
+                            <a href="https://archive.org/details/1001.Sound.Effects">Sound Effects</a>
+                        </li>
+                        <li>
+                            <a href="https://purepng.com/photo/46/animals-sitting-cat-png">cat1 (and favicon)</a>
+                        </li>
+                        <li>
+                            <a href="https://pngimg.com/uploads/cat/cat_PNG50456.png">cat2</a>
+                        </li>
+                        <li>
+                            <a href="http://pngimg.com/image/50445">cat3</a>
+                        </li>
+                        <li>
+                            <a href="https://pngimg.com/image/50432">cat4</a>
+                        </li>
+                        <li>
+                            <a href="http://pngimg.com/uploads/cat/cat_PNG50453.png">cat5</a>
+                        </li>
+                        <li>
+                            <a href="https://pngimg.com/uploads/cat/cat_PNG50502.png">cat6</a>
+                        </li>
+                        <li>
+                            <a href="https://pngimg.com/uploads/cat/cat_PNG50548.png">cat7</a>
+                        </li>
+                        <li>
+                            <a href="https://www.pngall.com/nyan-cat-png">cat8</a>
+                        </li>
+                        <li>
+                            <a href="http://pngimg.com/image/50269">dog1</a>
+                        </li>
+                        <li>
+                            <a href="http://pngimg.com/image/50305">dog2</a>
+                        </li>
+                        <li>
+                            <a href="http://pngimg.com/image/50302">dog3</a>
+                        </li>
+                        <li>
+                            <a href="https://freepngimg.com/png/9862-dog-png-10">dog4</a>
+                        </li>
+                        <li>
+                            <a href="https://pngimg.com/uploads/dog/dog_PNG50393.png">dog5</a>
+                        </li>
+                        <li>
+                            <a href="https://pngimg.com/uploads/dog/dog_PNG50402.png">dog6</a>
+                        </li>
+                        <li>
+                            <a href="http://pngimg.com/image/50403">dog7</a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.reddit.com/r/dogelore/comments/b3yanl/cut_out_doge_png_for_you_all_to_use/">dog8</a>
+                        </li>
+                        <li>
+                            <a href="https://www.onlinewebfonts.com/icon/55894">crosshair</a>
+                        </li>
+                    </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

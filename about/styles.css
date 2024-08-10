@@ -1,0 +1,155 @@
+* {
+    color: rgb(224, 224, 224);
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #583ABB;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header, nav, main, footer {
+    max-width: 1250px;
+    margin: 0px auto;
+    box-sizing: border-box;
+}
+
+header {
+    margin-top: 40px;
+    background-color: #907AD6;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Prata', serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    padding: 15px 0px;
+    margin: 0;
+}
+
+h2 {
+    margin: 0pt auto;
+    text-align: center;
+    font-size: 25px;
+    width: 40%;
+    font-style: italic;
+    padding-bottom: 15px;
+}
+
+h3 {
+    font-size: 45px;
+    margin: 0 0 10px 0;
+    font-style: italic;
+}
+
+h4 {
+    font-size: 25px;
+    border-bottom: solid;
+    width: fit-content;
+    margin: 0;
+}
+
+h5 {
+    margin: 0 auto;
+}
+
+p {
+    font-size: 18px;
+}
+
+nav {
+    background-color: rgb(97, 97, 97);
+    height: fit-content;
+    font-size: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    padding: 10px;
+    margin: 5px 20px;
+    display: block;
+    width: fit-content;
+}
+
+main {
+    background-color: #494b7c;
+    margin: 0px auto;
+    overflow: auto;
+    padding: 2em;
+}
+
+#intro {
+    margin-bottom: 40px;
+}
+
+#intro, .project {
+    display: flex;
+    justify-content: space-between;
+}
+
+#intro > div, .project > div {
+    margin: 20px;
+}
+
+.picture {
+    padding: 10px;
+    background-color: #907AD6;
+    height:fit-content;
+}
+
+#intro .picture {
+    margin: 10px 50px 10px 0px;
+}
+
+.picture img {
+    height: 250px;
+    max-width: 500px;
+}
+
+.picture h5 {
+    max-width: 200px;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    overflow-wrap: normal;
+}
+
+.project {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 50px;
+    border: 1px dotted black;
+}
+
+footer {
+    background-color: #907AD6;
+    padding: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    margin: auto 0 auto 50px;
+}
+
+#contact a {
+    font-size: 25px;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgb(158, 158, 158);
+}
